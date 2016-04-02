@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    h1 노래페이지
+tr
+    td#gs_tti50.gsib_a
+        input#masthead-search-term.gsfi(autocomplete='off', onkeydown='if (!this.value && (event.keyCode == 40 || event.keyCode == 32 || event.keyCode == 34)) {this.onkeydown = null; this.blur();}', name='search_query', value='', type='text', tabindex='1', placeholder='', title='검색', aria-label='검색', style='border: none; padding: 0px; margin: 0px; height: auto; width: 100%; outline: none;', dir='ltr', spellcheck='false')
+    td.gsib_b
+        #gs_st50.gsst_b(style='line-height: 30px;', dir='ltr')
+            a.gsst_a(href='javascript:void(0)')
+                span#gs_ok50.gsok_a.gsst_e
+                    img(src='//www.gstatic.com/inputtools/images/tia.png', tia_field_name='search_query', tia_disable_swap='true', tia_property='youtube')
+
+        a.btn.btn-lg.btn-success(href='#', role='button') ~~
+    // Example row of columns
+

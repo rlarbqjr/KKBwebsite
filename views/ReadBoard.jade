@@ -1,0 +1,14 @@
+
+extends layout
+block content
+ h2.sub-header
+    .table-responsive
+        table.table.table-striped
+            thead
+                tr
+                    th 제목 :
+                    th= boards[select].TITLE
+                tr
+                    th 내용 :
+                    th= boards[select].TEXT
+       a(href='/KKB/Board') [목록]

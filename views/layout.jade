@@ -1,0 +1,52 @@
+doctype html
+html
+      head
+          meta(charset='utf-8')
+          meta(http-equiv='X-UA-Compatible', content='IE=edge')
+          meta(name='viewport', content='width=device-width, initial-scale=1')
+          // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+          meta(name='description', content='')
+          meta(name='author', content='')
+          link(rel='icon', href='../../favicon.ico')
+          title Static Top Navbar Example for Bootstrap
+          // Bootstrap core CSS
+          link(href='../lib/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+          // IE10 viewport hack for Surface/desktop Windows 8 bug
+          link(href='../../assets/css/ie10-viewport-bug-workaround.css', rel='stylesheet')
+          // Custom styles for this template
+          link(href='navbar-static-top.css', rel='stylesheet')
+          // Just for debugging purposes. Don't actually copy these 2 lines!
+          //if lt IE 9
+          link(href='/stylesheets/style.css', rel='stylesheet')
+body
+    header#top.navbar.navbar-static-top.bs-docs-nav(role='banner')
+        .container
+            .navbar-header
+                button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-navbar', aria-controls='bs-navbar', aria-expanded='false')
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href='/KKB/home') KKB
+            nav#bs-navbar.collapse.navbar-collapse
+                ul.nav.navbar-nav
+                    li
+                        a(href='/KKB/song') Song
+                    li
+                        a(href='/KKB/login') Login
+                    li
+                        a(href='/KKB/board') Board
+                    li
+                        a(href='/KKB/file') File
+                    li
+    block content
+    script(src='../../assets/js/ie8-responsive-file-warning.js')
+    script(src='../../assets/js/ie-emulation-modes-warning.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    script.
+      window.jQuery || document.write('<script src="/lib/jquery/dist/jquery.min.js"><\\/script>')
+    script(src='/lib/bootstrap/dist/js/bootstrap.min.js')
+    // Just to make our placeholder images work. Don't actually copy the next line!
+    script(src='/lib/holderjs/holder.min.js')
+  // IE10 viewport hack for Surface/desktop Windows 8 bug
+  //script(src='../../assets/js/ie10-viewport-bug-workaround.js')

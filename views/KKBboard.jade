@@ -1,0 +1,30 @@
+
+extends layout
+block content
+ h2.sub-header
+    .table-responsive
+        table.table.table-striped
+            thead
+                tr
+                    th #
+                    th 글쓴이
+                    th 제목
+                    th 조회수
+                    th 시간
+            tbody
+              - for (var x = start; x < boards.length && x < last; x++)
+                 tr
+                     td= boards[x].ID
+                     td= boards[x].CREATER
+                     td
+                      a(href='/KKB/ReadBoard?id='+x)= boards[x].TITLE
+                     td= boards[x].VIEWER
+                     td= boards[x].TIME
+             tr
+              td(colspan='5')
+               a(href='/KKB/board1') <<
+               - for (var y = 0; y < 10; y++)
+                a(href='/KKB/board?apage='+y) [#{y}]
+               a(href='/KKB/board2') >>
+               a(href='/KKB/WriteBoard') [글쓰기]
+                  //-var board = boards
